@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*
+    Layout.css
+*/
+
+/***** Common *****/
+* {margin:0;padding:0;}
+img {width:100%;border:none;vertical-align:top;}
+li {list-style:none;}
+
+
+
+
+
+/***** layout *****/
+body {background:#e4e4e4;color:#000;font-family:'LG Smart','Malgun Gothic','맑은 고딕',Dotum,Arial;font-size:14px;font-weight:400;line-height:20px;-webkit-text-size-adjust:none;}
+#wrap {position:relative;max-width:450px;margin:0 auto;height:100%;background:#fff;text-align:center;}
+
