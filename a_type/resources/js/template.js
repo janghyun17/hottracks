@@ -17,7 +17,7 @@ $(function () {
  	$('.hot_deal_cont .owl-carousel').owlCarousel({
 		loop:true,
 		items:5,
-		margin:38,
+		margin:0,
 		
 		nav:true,
 		navText:false,
