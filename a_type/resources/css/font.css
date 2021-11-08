@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*
+    Font.css
+*/
+
+/* LG Smart */
+@font-face {
+	font-family:'LG Smart';
+	font-style:normal;
+	font-weight:300;
+	src:url(../font/LG_Smart_Light.woff2) format('woff2'),
+		url(../font/LG_Smart_Light.woff) format('woff'),
+}
+@font-face {
+	font-family:'LG Smart';
+	font-style:normal;
+	font-weight:400;
+	src:url(../font/LG_Smart_Regular.woff2) format('woff2'),
+		url(../font/LG_Smart_Regular.woff) format('woff'),
+}
+@font-face {
+	font-family:'LG Smart';
+	font-style:normal;
+	font-weight:600;
+	src:url(../font/LG_Smart_SemiBold.woff2) format('woff2'),
+		url(../font/LG_Smart_SemiBold.woff) format('woff'),
+}
+@font-face {
+	font-family:'LG Smart';
+	font-style:normal;
+	font-weight:700;
+	src:url(../font/LG_Smart_Bold.woff2) format('woff2'),
+		url(../font/LG_Smart_Bold.woff) format('woff'),
+}
+
+
+
+/* Noto Sans */
+@font-face {
+	font-family:'Noto Sans';
+	font-style:normal;
+	font-weight:400;
+	src:url(../font/NotoSansKR-Regular.woff2) format('woff2'),
+		url(../font/NotoSansKR-Regular.woff) format('woff'),
+}
