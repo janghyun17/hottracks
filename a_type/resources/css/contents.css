@@ -195,12 +195,12 @@
 /*** hot_view ***/
 .hot_view {position:relative;margin-bottom:70px;}
 .hot_view .tit {position:relative;margin-bottom:42px;}
-.hot_view .tit span {position:absolute;left:225px;top:-54px;animation:hot_view_tit both infinite 3s;transform-origin:60% 89%;}
+.hot_view .tit span {position:absolute;left:225px;top:-54px;animation:hot_view_tit both infinite 5s;transform-origin:60% 89%;}
 
 
 @keyframes hot_view_tit {
 0% {transform:scale(0.4) rotate(-30deg);}
-22% {transform:scale(1) rotate(0deg);}
+15% {transform:scale(1) rotate(0deg);}
 100% {transform:scale(1) rotate(0deg);}
 }
 
@@ -263,7 +263,6 @@
 
 .banner02.active .inner > img {opacity:1;} 
 .banner02.active li {opacity:1;transform:scale(1);} 
-
 .banner02.active li:nth-child(1) {transition-delay:0.4s;}
 .banner02.active li:nth-child(2) {transition-delay:0.6s;}
 
