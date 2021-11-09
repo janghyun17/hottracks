@@ -30,7 +30,7 @@
 
 /* mc_visual */
 .mc_visual {position:relative;}
-.mc_visual .li {position:relative;display:block;float:left;width:100%;height:100%;box-sizing:border-box;overflow:hidden;cursor:default;}
+.mc_visual .li {position:relative;display:block;float:left;width:100%;height:985px;box-sizing:border-box;overflow:hidden;cursor:default;}
 .mc_visual .li .img {position:relative;height:600px;overflow:hidden;}
 .mc_visual .li .img p {position:absolute;left:0;top:0;width:100%;height:100%;}
 .mc_visual .li .list {position: relative;width:1200px;margin:0 auto;}
