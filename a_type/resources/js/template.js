@@ -114,6 +114,83 @@ $(function(){
 
 
 
+$.fn.mcSlideEvent = function(){
+	$.each(this, function(i,v){
+		
+		$(v).find('.li').each(function(i) {
+			//$(this).addClass('itm'+i);
+			//$('.thumb_thumb_area li.itm0').addClass('selected');
+
+			$(this).find('a').click(function() {
+							$(v).children().removeClass('act');
+				setTimeout(function(){
+				$(v).trigger('slideTo', [i, -2, true]);
+				return false;
+					}, 600);
+			});
+		});
+		
+		var $highlight = function() { 
+			var items = $(v).triggerHandler('currentVisible');
+			//$(v).children().removeClass('act');
+			
+			setTimeout(function(){
+				items.filter(':eq(2)').addClass('act');
+			}, 600);
+			
+			
+		};
+		$prev = $(v).closest('article').find('.mc_prev');
+		$next = $(v).closest('article').find('.mc_next');
+		
+		$(v).carouFredSel({
+			responsive:false,
+			firstLoadChk :true,    
+			direction:'left',     
+			circular:true,
+			infinite:false,
+			items:{visible:5},
+			swipe:{onMouse:true, onTouch:true},
+			auto:false, 
+			prev: {
+				button: $prev,
+				key: 'left'
+			},
+			next: {
+				button: $next,
+				key: 'right'
+			},
+			pagination:false, 
+			scroll:{
+				fx:'scroll',
+				items:1,
+				//pauseOnHover:true,
+				duration:700,
+				onAfter:$highlight,
+				onBefore: function() {
+					var pos = $(this).triggerHandler('currentPosition');
+					var page = Math.floor( pos );
+					$(v).closest('article').find('.slide_txt').trigger( 'slideToPage', page );
+				}
+				
+			},
+			onCreate:$highlight
+		});
+		
+	
+	});
+};
+
+$(function(){
+
+	$('.mc_group_list').mcSlideEvent();
+
+});
+
+
+
+
+
 $(function () {
  	$('.md_pick_cont .owl-carousel').owlCarousel({
 		loop:true,
@@ -149,7 +226,7 @@ $(function () {
 	
 
  	$('.mc_music_cont .owl-carousel').owlCarousel({
-		loop:true,
+		loop:false,
 		items:5,
 		margin:16,
 		
