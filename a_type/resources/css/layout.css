@@ -23,12 +23,34 @@ header {position:fixed;left:0;top:0;width:100%;height:210px;background:#fff;bord
 header:before {position:absolute;right:0;top:0;width:50%;height:42px;background:#eaebf0;content:"";}
 header:after {position:absolute;left:0;top:0;width:100%;height:4px;background:#eaebf0;content:"";}
 header .inner {height:209px;background:#fff url("../images/header.jpg") center top no-repeat;}
-
+header .ani_st {left:51px;top:54px;}
 
 
 
 /**** Container ****/
 #container {position:relative;padding-top:210px;background:#ffff;text-align:center;overflow:hidden;}
+
+
+
+.ani_st {position:absolute;left:0;top:0;width:24px;height:26px;z-index:5;}
+.ani_st .a1 {position:absolute;left:8px;top:0;width:8px;height:8px;background:#268b15;border-radius:50%;z-index:1;animation:ani_st1 both infinite 5s;}
+.ani_st .a2 {position:absolute;left:0;top:0;width:24px;height:22px;overflow:hidden;}
+.ani_st .a2 span {display:block;position:absolute;left:0;top:8px;width:0;height:0;border-top:14px solid none;border-right:12px solid transparent;border-bottom:14px solid #d53020;border-left:12px solid  transparent;animation:ani_st2 both linear infinite 5s}
+
+@keyframes ani_st1 {
+0% {transform:scale(0.2);opacity:0;}	
+12% {transform:scale(0.2);opacity:0;}
+18% {transform:scale(1.2);opacity:1;}
+20% {transform:scale(1);}
+100% {transform:scale(1);}
+}
+
+@keyframes ani_st2 {
+0% {transform:translateY(150%);border-bottom-width:5px;}
+13% {transform:translateY(-30%);border-bottom-width:22px;}
+16% {transform:translateY(0);border-bottom-width:14px;}
+100% {transform:translateY(0)}
+}
 
 
 
@@ -41,6 +63,31 @@ header .inner {height:209px;background:#fff url("../images/header.jpg") center t
 .footer_cont:before {position:absolute;left:0;top:0;width:100%;height:1px;background:#d5d5d5;content:"";z-index:1;}
 .footer_cont:after {position:absolute;left:0;top:60px;width:100%;height:1px;background:#d5d5d5;content:"";z-index:1;}
 .footer_cont .inner {height:370px;background:url("../images/footer_cont.jpg") center no-repeat;}
+
+
+
+
+
+
+
+
+@keyframes scaleBg {
+0% {transform:scale(1.05);}
+100% {transform:scale(1);}
+}
+@keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@keyframes fadeTop {
+0% {opacity:0;transform:translateY(20px);}
+100% {opacity:1;transform:translateY(0);}
+}
+
+
+
+
+
 
 
 

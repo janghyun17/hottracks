@@ -1,3 +1,119 @@
+
+
+/* Visual Area */
+$(function(){
+    if(!$('.visual_area').length) return;
+
+    var $visualArea = $('.visual_area');
+    $visualArea.find('.img p').imgLiquid({fill:true, horizontalAlign:"center", verticalAlign:"center"});
+	
+    $.fn.visual_area = function(){
+        $.each(this, function(i,v){
+            var $highlight = function() { 
+                var items = $(v).find('.mc_visual').triggerHandler('currentVisible');
+                $(v).find('.mc_visual').children().removeClass('act');
+                items.addClass('act');
+                if(!$(v).find('.md_play').hasClass("on")){
+                    sequenceControl("PLAY", false);
+                }else{
+                    sequenceControl("STOP", false);
+                }
+                $(v).find('.mc_visual').parent().height($(v).find('.mc_visual').children().first().height());
+				
+				
+				var n = $(v).find('.li').length
+				function lan(n) {
+				  return (n < 10 ? '0' : '') + n
+				}
+				$(v).find('.md_pagn_len').text(lan(n));
+				
+            };
+
+            var $pagin = $(v).find('.md_pagn');
+            var $timer = $(v).find('.md_timer p');
+            var $paly = $(v).find('.md_btn_play');
+            var $stop = $(v).find('.md_btn_stop');
+            var $prev = $(v).find('.md_pagn_prev');
+            var $next = $(v).find('.md_pagn_next');
+			
+            $(v).find('.mc_visual').carouFredSel({
+                responsive:true,
+                firstLoadChk :true,
+                direction:'left',
+                circular:true,
+                infinite:false,
+                auto:{
+                    progress:$timer,
+                    timeoutDuration:5000
+                },
+                prev: {
+                    button:$prev,
+                    key: 'left'
+                },
+                next: {
+                    button:$next,
+                    key: 'right'
+                },
+                pagination:{
+                    container: $pagin,
+                    anchorBuilder: function(nr) { return '<a href="#">'+ (nr < 10 ? "0"+nr : nr) +'</a>';}
+                },
+                items:{start:0, visible:1},
+                swipe:{onMouse:true, onTouch:true},
+                scroll:{
+                    fx:'fade',
+                    duration:0,
+                    items:1,
+                    direction:'right', 
+                    easing :'swing',
+                    onBefore: function() {
+                    },
+                    onAfter:$highlight
+                },
+                onCreate:$highlight
+            });
+
+            $stop.click(function(){
+                sequenceControl("STOP", true);
+                return false;
+            });
+
+            $paly.click(function(){
+                sequenceControl("PLAY", true);
+                return false;
+            });
+            
+            function sequenceControl(option, changeFocus){
+                switch (option) {
+                    case "PLAY":
+                        if(!$(v).find('.md_play').hasClass("on")) return;
+                        
+                        $(v).find('.md_play').removeClass('on');
+                        $(v).find('.mc_visual').trigger('play', true);
+                        $(v).find('.mc_visual video').trigger('play');
+
+                        changeFocus && $stop.focus();
+                        break;
+                    case "STOP":
+                        if($(v).find('.md_play').hasClass("on")) return;
+
+                        $(v).find('.md_play').addClass('on');
+                        $(v).find('.mc_visual').trigger('pause', true);
+                        $(v).find('.mc_visual video').trigger('pause');
+
+                        changeFocus && $paly.focus();
+                        break;
+                    // default:
+                    //     break;
+                }
+            }
+        });
+    };
+    $visualArea.visual_area();
+});
+
+
+
 $(function () {
  	$('.md_pick_cont .owl-carousel').owlCarousel({
 		loop:true,
@@ -11,7 +127,7 @@ $(function () {
 		smartSpeed:650,
 		autoplay:true,
 		autoplayTimeout:5000,
-		autoplayHoverPause:true
+		//autoplayHoverPause:true
 	});
 	
  	$('.hot_deal_cont .owl-carousel').owlCarousel({
@@ -28,7 +144,7 @@ $(function () {
 		smartSpeed:650,
 		autoplay:true,
 		autoplayTimeout:5000,
-		autoplayHoverPause:true
+		//autoplayHoverPause:true
 	});
 	
 
