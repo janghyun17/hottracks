@@ -44,7 +44,7 @@ $(function(){
                 infinite:false,
                 auto:{
                     progress:$timer,
-                    timeoutDuration:5000
+                    timeoutDuration:3000
                 },
                 prev: {
                     button:$prev,
@@ -126,7 +126,7 @@ $(function () {
 		
 		smartSpeed:650,
 		autoplay:true,
-		autoplayTimeout:5000,
+		autoplayTimeout:3000,
 		//autoplayHoverPause:true
 	});
 	
@@ -143,7 +143,7 @@ $(function () {
 		
 		smartSpeed:650,
 		autoplay:true,
-		autoplayTimeout:5000,
+		autoplayTimeout:3000,
 		//autoplayHoverPause:true
 	});
 	

@@ -33,22 +33,22 @@ header .ani_st {left:51px;top:54px;}
 
 
 .ani_st {position:absolute;left:0;top:0;width:24px;height:26px;z-index:5;}
-.ani_st .a1 {position:absolute;left:8px;top:0;width:8px;height:8px;background:#268b15;border-radius:50%;z-index:1;animation:ani_st1 both infinite 5s;}
+.ani_st .a1 {position:absolute;left:8px;top:0;width:8px;height:8px;background:#268b15;border-radius:50%;z-index:1;animation:ani_st1 both infinite 3s;}
 .ani_st .a2 {position:absolute;left:0;top:0;width:24px;height:22px;overflow:hidden;}
-.ani_st .a2 span {display:block;position:absolute;left:0;top:8px;width:0;height:0;border-top:14px solid none;border-right:12px solid transparent;border-bottom:14px solid #d53020;border-left:12px solid  transparent;animation:ani_st2 both linear infinite 5s}
+.ani_st .a2 span {display:block;position:absolute;left:0;top:8px;width:0;height:0;border-top:14px solid none;border-right:12px solid transparent;border-bottom:14px solid #d53020;border-left:12px solid  transparent;animation:ani_st2 both linear infinite 3s}
 
 @keyframes ani_st1 {
 0% {transform:scale(0.2);opacity:0;}	
-12% {transform:scale(0.2);opacity:0;}
-18% {transform:scale(1.2);opacity:1;}
-20% {transform:scale(1);}
+20% {transform:scale(0.2);opacity:0;}
+30% {transform:scale(1.2);opacity:1;}
+34% {transform:scale(1);}
 100% {transform:scale(1);}
 }
 
 @keyframes ani_st2 {
 0% {transform:translateY(150%);border-bottom-width:5px;}
-13% {transform:translateY(-30%);border-bottom-width:22px;}
-16% {transform:translateY(0);border-bottom-width:14px;}
+21% {transform:translateY(-30%);border-bottom-width:22px;}
+25% {transform:translateY(0);border-bottom-width:14px;}
 100% {transform:translateY(0)}
 }
 

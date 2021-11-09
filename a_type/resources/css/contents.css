@@ -81,8 +81,6 @@
 .visual_area .md_play {position:absolute;right:30px;top:15px;}
 .visual_area .md_play a {display:block;position:relative;width:20px;height:20px;overflow:hidden;outline:none;}
 .visual_area .md_play .md_btn_play:before {position:absolute;left:50%;top:50%;width:0;height:0;border-width:5px 0 5px 8px;border-style:solid;border-color:transparent;border-left-color:#fff;content:"";transform:translate(-50%,-50%);transition:all 0.4s;}
-.visual_area .md_play .md_btn_play:hover:before,
-.visual_area .md_play .md_btn_play:focus:before {border-left-color:#0098c2;}
 .visual_area .md_play .md_btn_stop:before {position:absolute;left:6px;top:5px;width:2px;height:10px;background:#fff;content:"";transition:all 0.4s;}
 .visual_area .md_play .md_btn_stop:after {position:absolute;left:11px;top:5px;width:2px;height:10px;background:#fff;content:"";transition:all 0.4s;}
 .visual_area .md_play .md_btn_play {display:none;}
@@ -118,7 +116,7 @@
 
 
 /*** hot_deal ***/
-.hot_deal {position:relative;margin:135px 0 105px 0;}
+.hot_deal {position:relative;margin:135px 0 150px 0;}
 .hot_deal .tit {position: relative;}
 .hot_deal .tit .s1 {position:absolute;left:428px;top:54px;animation:hot_dea1 both infinite 4s;}
 .hot_deal .tit .s2 {position:absolute;right:0;top:0;width:74px;animation:hot_dea2 both linear infinite 8s;}
@@ -170,17 +168,44 @@
 .hot_deal_cont .center .item .txt {opacity:1;transition:all 0.4s 1.2s}
 .hot_deal_cont .center .item .ico {opacity:1;transform:scale(1);transition:all 0.4s 1.2s}
 
-
 .hot_deal_time {margin:20px 0 40px 0;}
 .hot_deal_timeline {position:relative;width:450px;margin:0 auto;}
-.hot_deal_timeline p {position:relative;width:100%;height:10px;background:#d5d5d5;border-radius:5px;overflow:hidden;}
-.hot_deal_timeline p span {position: absolute;left:0;top:0;width:40%;height:10px;background:#000;border-radius:5px;overflow:hidden;}
+.hot_deal_timeline .bar {position:relative;width:100%;height:10px;background:#d5d5d5;border-radius:5px;overflow:hidden;}
+.hot_deal_timeline .bar span {position:absolute;left:0;top:0;width:0%;height:10px;background:#000;border-radius:5px;overflow:hidden;}
+.hot_deal_timeline .fire {position:absolute;left:0;top:-28px;transform:translateX(-22px);}
+
+.hot_deal_timeline.active .bar span {animation:fire_timeline both 80s;}
+.hot_deal_timeline.active .fire {animation:fire_timeline2 both 80s;}
+
+@keyframes fire_timeline {
+0% {width:0%;}	
+1.1% {width:35%;}	
+100% {width:100%;}
+}
+@keyframes fire_timeline2 {
+0% {left:0%;}	
+1.1% {left:35%;}	
+100% {left:100%;}
+}
+
+
 
 
 
 /*** hot_view ***/
 .hot_view {position:relative;margin-bottom:70px;}
-.hot_view .tit {margin-bottom:42px;}
+.hot_view .tit {position:relative;margin-bottom:42px;}
+.hot_view .tit span {position:absolute;left:225px;top:-54px;animation:hot_view_tit both infinite 3s;transform-origin:60% 89%;}
+
+
+@keyframes hot_view_tit {
+0% {transform:scale(0.4) rotate(-30deg);}
+22% {transform:scale(1) rotate(0deg);}
+100% {transform:scale(1) rotate(0deg);}
+}
+
+
+
 .hot_view .list {position:relative;margin:0 -18px;text-align:left;opacity:0;transition:all 0.4s;}
 .hot_view .list li {float:left;margin:0 18px 36px 18px;opacity:0;transition:all 0.6s;}
 .hot_view .list li a {display:block;position:relative;width:273px;height:273px;border-radius:24px;overflow:hidden;}
