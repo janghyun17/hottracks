@@ -205,34 +205,22 @@ $(function () {
 		//autoplayHoverPause:true
 	});
 	
-
- 	$('.mc_music_cont .owl-carousel').owlCarousel({
-		loop:false,
-		items:5,
-		margin:16,
+	
+ 	$('.hot_promotion02_cont .owl-carousel').owlCarousel({
+		loop:true,
+		items:3,
+		margin:140,
 		
-		nav:false,
+		nav:true,
+		navText:false,
 		dots:false,
-		
-		smartSpeed:550,
 		center: true,
-		URLhashListener: true,
-		 autoWidth:true,
-		//autoplay:true,
-		//autoplayTimeout:5000,
+		autoWidth:true,
+		
+		smartSpeed:750,
+		autoplay:true,
+		autoplayTimeout:3000,
 		//autoplayHoverPause:true
-
-		
-            onInitialized: function(e){
-                $(this).addClass("act");
-            },
-            onRefreshed: function(e){ // FIREFOX
-                $(this).addClass("act");
-            },
-            onChanged: function(e){
-                $(this).removeClass("act");
-            },
-		
 	});
 });
 
