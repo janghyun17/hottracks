@@ -205,6 +205,21 @@ $(function () {
 		//autoplayHoverPause:true
 	});
 	
+ 	$('.mc_life_cont .owl-carousel').owlCarousel({
+		loop:true,
+		items:1,
+		margin:0,
+		nav:true,
+		navText:false,
+		dots:false,
+		center: true,
+		autoWidth:false,
+		
+		smartSpeed:850,
+		autoplay:true,
+		autoplayTimeout:3000,
+		autoplayHoverPause:true
+	});
 	
  	$('.hot_promotion02_cont .owl-carousel').owlCarousel({
 		loop:true,
