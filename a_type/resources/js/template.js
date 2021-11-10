@@ -237,6 +237,16 @@ $(function () {
 		autoplayTimeout:3000,
 		//autoplayHoverPause:true
 	});
+	
+	
+				
+		$('.mc_gift_cont').mCustomScrollbar({
+			axis:"x",
+			scrollInertia:200,
+			advanced:{autoExpandHorizontalScroll:true}
+		});
+				
+	
 });
 
 
