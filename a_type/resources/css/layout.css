@@ -28,8 +28,8 @@ header .ani_st {left:51px;top:54px;}
 
 
 /**** Container ****/
-#container {position:relative;padding-top:210px;background:#ffff;text-align:center;overflow:hidden;}
-
+#container {position:relative;padding-top:210px;background:#ffff;text-align:center;}
+#container section {overflow:hidden;}
 
 
 .ani_st {position:absolute;left:0;top:0;width:24px;height:26px;z-index:5;}

@@ -26,7 +26,7 @@
 
 
 /*** visual_area **/
-.visual_area {position:relative;margin-bottom:100px;}
+.visual_area {position:relative;margin-bottom:100px;overflow:hidden;}
 
 /* mc_visual */
 .mc_visual {position:relative;}
@@ -361,6 +361,30 @@
 .banner03.active li:nth-child(3) {transition-delay:0.8s;}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Sub *****/
+.sub_area {position:relative;padding-top:90px;}
+.sub_area:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
+.prod_cate {position:fixed;top:210px;left:0;width:100%;background:#fff;text-align:center;z-index:2;}
+.prod_view {position:relative;width:50%;margin-left:-20px;}
+.prod_list {position:sticky;float:right;width:331px;top:300px;z-index:1;}
 
 
 
