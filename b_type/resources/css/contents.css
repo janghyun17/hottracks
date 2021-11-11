@@ -14,9 +14,11 @@
 
 /*** 핫트딜 ***/
 .mc03 {position:relative;padding:40px 0 100px 0;background:#fff;}
-
+.mc03 .tit {margin-bottom:30px;}
 .mc03 .list {position: relative;margin:0 -30px;}
 .mc03 .list li {float:left;margin:0 30px;}
+.mc03 .list:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
+.mc03 .btn {margin-top:55px;}
 
 
 /*** 지금 이 상품을 ***/
@@ -112,7 +114,7 @@
 .mc08 .tit p .a6:before,
 .mc08 .tit p .a6:after, 
 .mc08 .tit p .a7:before,
-.mc08 .tit p .a7:after {position:absolute;background:#000;content:"";}
+.mc08 .tit p .a7:after {position:absolute;background:#bc554f;content:"";}
 .mc08 .tit p span {opacity:0;transition:all 0.4s;}
 
 .mc08 .tit.active p .a1:before {left:0;top:0;width:100%;height:1px;animation:width both 1s 0.2s;}

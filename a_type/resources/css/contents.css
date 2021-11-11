@@ -287,7 +287,7 @@
 
 /*** mc_gift ***/
 .mc_gift {position:relative;height:780px;background:#114b34 url("../images/img_mc_gift_bg.jpg") repeat-x;}
-.mc_gift .inner:after {position:absolute;left:-60px;top:0;width:1px;height:780px;background:#fc6a6a;content:"";}
+.mc_gift .inner:before {position:absolute;left:-60px;top:0;width:1px;height:780px;background:#fc6a6a;content:"";}
 .mc_gift .tit {position:relative;top:-18px;margin-bottom:0px;}
 .mc_gift .tit .s1 {position:absolute;right:351px;top:0;animation:mc_gift_tit both infinite 5s;transform-origin:60% 89%;}
 
