@@ -15,29 +15,141 @@
 /*** 핫트딜 ***/
 .mc03 {position:relative;background:#fff;height:200px}
 
+
+
+
 /*** 지금 이 상품을 ***/
-.mc04 {position:relative;background:#1977f2;height:200px}
+.mc04 {position:relative;padding:160px 0 170px 0;background:#1977f2 url("../images/mc04_bg.png") center top repeat;}
+.mc04 .tit {position:relative;margin-bottom:145px;}
+.mc04 .tit_inner {display:inline-block;position:relative;}
+.mc04 .tit .ico {position:absolute;left:-145px;top:-36px;width:65px;}
+.mc04 .tit .ico2 {position:absolute;right:-150px;top:-55px;animation:mc04_s2 both linear infinite 2.7s;}
+
+@keyframes mc04_s2 {
+0% {transform:scale(1) rotate(20deg)}
+50% {transform:scale(0.9) rotate(-10deg)}
+100% {transform:scale(1) rotate(20deg)}
+}
+
+
+
+.mc04 .list {position:relative;height:2280px;}
+.mc04 .list li {position:absolute;opacity:0;transform:translateY(40px);transition:all 0.6s 0.4s;}
+.mc04 .list li.active {opacity:1;transform:translateY(0);}
+.mc04 .list li:nth-child(2).active,
+.mc04 .list li:nth-child(5).active,
+.mc04 .list li:nth-child(7).active,
+.mc04 .list li:nth-child(9).active {transition-delay:0.6s;}
+.mc04 .list li:nth-child(3) {transition-delay:0.8s;}
+.mc04 li:nth-child(1) {left:0;top:0;}
+.mc04 li:nth-child(2) {left:359px;top:0;}
+.mc04 li:nth-child(3) {left:880px;top:0;}
+.mc04 li:nth-child(4) {left:118px;top:630px;}
+.mc04 li:nth-child(5) {left:588px;top:616px;}
+.mc04 li:nth-child(6) {left:-30px;top:1272px;}
+.mc04 li:nth-child(7) {left:608px;top:1272px;}
+.mc04 li:nth-child(8) {left:-30px;top:1798px;}
+.mc04 li:nth-child(9) {left:608px;top:1798px;}
+
+
+
 
 /*** 곧 발매되는 음반 소식 ***/
-.mc05 {position:relative;background:#000;height:200px}
+.mc05 {position:relative;background:#000;}
+.mc05_cont {display:block;height:1150px;background:url("../images/mc05_img.png") center no-repeat;}
+
+
 
 
 /*** 음반배너 ***/
 .mc06 {position:relative;background:#222;height:200px}
+.mc06_cont {display:block;height:200px;background:url("../images/mc06_img.png") left center repeat-x;animation:mc06_cont both infinite linear 25s;}
+
+@keyframes mc06_cont {
+0% {background-position:0 center;}
+100% {background-position:-2400px center;}
+}
+
+
 
 
 /*** Banner ***/
-.mc07 {position:relative;background:#936dfc;height:200px}
+.mc07 {position:relative;height:264px;background:#936dfc;}
+.mc07 .img {position:absolute;left:0;top:0;width:100%;height:100%;background:url("../images/mc07_img.png") center no-repeat;}
+.mc07 .s1 {position:absolute;left:70px;top:-3px;animation:mc07_s1 both linear infinite 2.9s;}
+.mc07 .s2 {position:absolute;right:35px;top:-23px;animation:mc07_s2 both linear infinite 2.7s;}
+
+@keyframes mc07_s1 {
+0% {transform:scale(1) translateY(-20px);}
+50% {transform:scale(0.9) translateY(20px);}
+100% {transform:scale(1) translateY(-20px);}
+}
+
+@keyframes mc07_s2 {
+0% {transform:scale(1) rotate(-20deg)}
+50% {transform:scale(0.9) rotate(10deg)}
+100% {transform:scale(1) rotate(-20deg)}
+}
+
 
 
 
 /*** 이순간 감성충전 ***/
-.mc08 {position:relative;background:#f5ede2;height:200px}
+.mc08 {position:relative;padding:98px 0 105px 0;background:#f5ede2 url("../images/mc08_bg.png") center top repeat;}
+.mc08 .tit {margin-bottom:62px;}
+.mc08 .tit p {display:inline-block;position:relative;}
+.mc08 .tit p .a1:before,
+.mc08 .tit p .a1:after,
+.mc08 .tit p .a2:before,
+.mc08 .tit p .a2:after, 
+.mc08 .tit p .a3:before,
+.mc08 .tit p .a3:after, 
+.mc08 .tit p .a4:before,
+.mc08 .tit p .a4:after, 
+.mc08 .tit p .a5:before,
+.mc08 .tit p .a5:after,
+.mc08 .tit p .a6:before,
+.mc08 .tit p .a6:after, 
+.mc08 .tit p .a7:before,
+.mc08 .tit p .a7:after {position:absolute;background:#000;content:"";}
+.mc08 .tit p span {opacity:0;transition:all 0.4s;}
+
+.mc08 .tit.active p .a1:before {left:0;top:0;width:100%;height:1px;animation:width both 1s 0.2s;}
+.mc08 .tit.active p .a1:after {right:0;top:7px;width:100%;height:1px;animation:width both 1s 0.2s;}
+.mc08 .tit.active p .a2:before {left:0;bottom:0;width:100%;height:1px;animation:width both 1s 0.2s;}
+.mc08 .tit.active p .a2:after {right:0;bottom:7px;width:100%;height:1px;animation:width both 1s 0.2s;}
+.mc08 .tit.active p .a3:before {left:50px;top:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p .a3:after {left:145px;bottom:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p .a4:before {left:240px;top:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p .a4:after {left:335px;bottom:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p .a5:before {left:430px;top:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p .a5:after {left:525px;bottom:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p .a6:before {left:620px;top:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p .a6:after {left:715px;bottom:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p .a7:before {left:810px;top:7px;width:1px;height:116px;animation:height both 0.5s 0.8s;}
+.mc08 .tit.active p span {opacity:1;transition:all 0.8s 0.8s;}
+
+.mc08 .list {position:relative;height:2151px;}
+.mc08 .list li {position:absolute;opacity:0;transform:translateY(40px);transition:all 0.6s 0.4s;}
+.mc08 .list li.active {opacity:1;transform:translateY(0);}
+.mc08 .list li:nth-child(2).active,
+.mc08 .list li:nth-child(5).active {transition-delay:0.6s;}
+.mc08 .list li:nth-child(1) {left:-8px;top:-6px;}
+.mc08 .list li:nth-child(2) {right:-9px;top:-6px;}
+.mc08 .list li:nth-child(3) {right:0;top:646px;}
+.mc08 .list li:nth-child(4) {left:-8px;top:978px;}
+.mc08 .list li:nth-child(5) {left:400px;top:978px;}
+.mc08 .list li:nth-child(6) {right:-8px;top:1215px;}
+.mc08 .list li:nth-child(7) {left:-8px;top:1562px;}
+.mc08 .list li:nth-child(8) {left:410px;top:1635px;}
+
+
+
 
 
 
 /*** 선물하기 ***/
-.mc09 {position:relative;background:#000;height:200px}
+.mc09 {position:relative;background:#000;height:1046px}
 
 
 
@@ -48,13 +160,14 @@
 .mc10 .tit span {margin-left:13px;color:transparent;-webkit-text-stroke:0.1mm #f5f5f5;text-stroke:0.1mm #f5f5f5;transition:all 0.6s;}
 .mc10 .tit strong em {display:inline-block;position:relative;color:transparent;-webkit-text-stroke:0.4mm #000;text-stroke:0.4mm #000;font-style:normal;}
 .mc10 .tit strong em:before {display:block;position:absolute;left:0;top:0;width:0;height:120%;color:#000;overflow:hidden;content:attr(data-text);}
-.mc10 .tit strong em:nth-child(1):before {animation-delay:0.2s;}
-.mc10 .tit strong em:nth-child(2):before {animation-delay:0.4s;}
-.mc10 .tit strong em:nth-child(3):before {animation-delay:0.6s;}
-.mc10 .tit strong em:nth-child(4):before {animation-delay:0.8s;}
-.mc10 .tit.active strong em:before {animation:txtMask both 0.6s;}
-.mc10 .tit.active span {-webkit-text-stroke:0.4mm #000;text-stroke:0.4mm #000;transition-delay:1s}
-.mc10 .tit .ico {position:absolute;left:-5px;top:-50px;width:65px;}
+.mc10 .tit .ico {display:none;position:absolute;left:-5px;top:-50px;width:65px;}
+.mc10 .tit.active strong em:before {animation:txtMask both 0.4s;}
+.mc10 .tit.active strong em:nth-child(1):before {animation-delay:0.2s;}
+.mc10 .tit.active strong em:nth-child(2):before {animation-delay:0.4s;}
+.mc10 .tit.active strong em:nth-child(3):before {animation-delay:0.6s;}
+.mc10 .tit.active strong em:nth-child(4):before {animation-delay:0.8s;}
+.mc10 .tit.active span {-webkit-text-stroke:0.4mm #000;text-stroke:0.4mm #000;transition-delay:1s;}
+.mc10 .tit.active .ico {display:block;}
 
 .mc10 .list {position:relative;margin:10px -13px 0 -13px;}
 .mc10 .list li {float:left;margin:60px 13px 0 13px;opacity:0;transition:all 0.4s;}
@@ -100,7 +213,7 @@
 
 
 /*** 공지사항 ***/
-.mc12 {position: relative;height:140px;border:solid #000;border-width:4px 0;box-sizing:border-box;}
+.mc12 {position:relative;height:140px;border:solid #000;border-width:4px 0;box-sizing:border-box;}
 .mc12_cont {display:block;height:132px;background:url("../images/mc12_img01.png") left center repeat-x;animation:mc12_cont both infinite linear 25s;}
 
 @keyframes mc12_cont {
