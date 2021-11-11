@@ -266,6 +266,13 @@ $(function () {
 		$('.gnb01').fadeIn();
 		return false;
 	});
+	
+	$('.gnb01').click(function() {
+		$('.gnb').hide();
+		$('.gnb02').show();
+		return false;
+	});
+	
 	$('.btn_gnb02').click(function() {
 		$('.gnb').hide();
 		$('.gnb02').fadeIn();
@@ -276,7 +283,7 @@ $(function () {
 		$('.gnb03').fadeIn();
 		return false;
 	});
-	$('.gnb').click(function() {
+	$('.gnb_out').click(function() {
 		$('.gnb').fadeOut();
 		return false;
 	});
