@@ -4,3 +4,115 @@
 */
 
 /**** Main  ****/
+
+
+/*** Visual Area ***/
+.mc01 {position:relative;background:#000;height:200px}
+
+/*** MD Picks ***/
+.mc02 {position:relative;background:#ded2bf;height:200px}
+
+/*** 핫트딜 ***/
+.mc03 {position:relative;background:#fff;height:200px}
+
+/*** 지금 이 상품을 ***/
+.mc04 {position:relative;background:#1977f2;height:200px}
+
+/*** 곧 발매되는 음반 소식 ***/
+.mc05 {position:relative;background:#000;height:200px}
+
+
+/*** 음반배너 ***/
+.mc06 {position:relative;background:#222;height:200px}
+
+
+/*** Banner ***/
+.mc07 {position:relative;background:#936dfc;height:200px}
+
+
+
+/*** 이순간 감성충전 ***/
+.mc08 {position:relative;background:#f5ede2;height:200px}
+
+
+
+/*** 선물하기 ***/
+.mc09 {position:relative;background:#000;height:200px}
+
+
+
+
+/*** Best Product ***/
+.mc10 {position:relative;padding:185px 0 140px 0;background:#fff;}
+.mc10 .tit {margin:0 0 80px -7px;font-size:120px;line-height:120px;font-weight:900;text-align:left;letter-spacing:-0.5px;}
+.mc10 .tit span {margin-left:13px;color:transparent;-webkit-text-stroke:0.1mm #f5f5f5;text-stroke:0.1mm #f5f5f5;transition:all 0.6s;}
+.mc10 .tit strong em {display:inline-block;position:relative;color:transparent;-webkit-text-stroke:0.4mm #000;text-stroke:0.4mm #000;font-style:normal;}
+.mc10 .tit strong em:before {display:block;position:absolute;left:0;top:0;width:0;height:120%;color:#000;overflow:hidden;content:attr(data-text);}
+.mc10 .tit strong em:nth-child(1):before {animation-delay:0.2s;}
+.mc10 .tit strong em:nth-child(2):before {animation-delay:0.4s;}
+.mc10 .tit strong em:nth-child(3):before {animation-delay:0.6s;}
+.mc10 .tit strong em:nth-child(4):before {animation-delay:0.8s;}
+.mc10 .tit.active strong em:before {animation:txtMask both 0.6s;}
+.mc10 .tit.active span {-webkit-text-stroke:0.4mm #000;text-stroke:0.4mm #000;transition-delay:1s}
+.mc10 .tit .ico {position:absolute;left:-5px;top:-50px;width:65px;}
+
+.mc10 .list {position:relative;margin:10px -13px 0 -13px;}
+.mc10 .list li {float:left;margin:60px 13px 0 13px;opacity:0;transition:all 0.4s;}
+.mc10 .list li.active {opacity:1;}
+.mc10 .list li:nth-child(1).active {transition-delay:0.4s;}
+.mc10 .list li:nth-child(2).active {transition-delay:0.6s;}
+.mc10 .list li:nth-child(3).active {transition-delay:0.8s;}
+.mc10 .list li:nth-child(4).active {transition-delay:1s;}
+.mc10 .list li:nth-child(5).active {transition-delay:0.4s;}
+.mc10 .list li:nth-child(6).active {transition-delay:0.6s;}
+.mc10 .list li:nth-child(7).active {transition-delay:0.8s;}
+.mc10 .list li:nth-child(8).active {transition-delay:1s;}
+.mc10 .list:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
+.mc10 .btn {margin-top:80px;}
+
+
+@keyframes txtMask {
+0% {width:0%;opacity:0;}
+100% {width:105%;opacity:1;}
+}
+
+
+
+
+
+/*** Best Product02 ***/
+.mc11 {position:relative;padding:150px 0 105px 0;background:#f2c3c9;}
+.mc11 .list {position:relative;margin:10px -13px 0 -13px;}
+.mc11 .list li {float:left;margin:45px 13px 0 13px;opacity:0;transition:all 0.4s;}
+.mc11 .list li.active {opacity:1;}
+.mc11 .list li:nth-child(1).active {transition-delay:0.4s;}
+.mc11 .list li:nth-child(2).active {transition-delay:0.6s;}
+.mc11 .list li:nth-child(3).active {transition-delay:0.8s;}
+.mc11 .list li:nth-child(4).active {transition-delay:1s;}
+.mc11 .list li:nth-child(5).active {transition-delay:0.4s;}
+.mc11 .list li:nth-child(6).active {transition-delay:0.6s;}
+.mc11 .list li:nth-child(7).active {transition-delay:0.8s;}
+.mc11 .list li:nth-child(8).active {transition-delay:1s;}
+.mc11 .list:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
+.mc11 .btn {margin:70px 0 90px 0;}
+
+
+
+
+/*** 공지사항 ***/
+.mc12 {position: relative;height:140px;border:solid #000;border-width:4px 0;box-sizing:border-box;}
+.mc12_cont {display:block;height:132px;background:url("../images/mc12_img01.png") left center repeat-x;animation:mc12_cont both infinite linear 25s;}
+
+@keyframes mc12_cont {
+0% {background-position:0 center;}
+100% {background-position:-3142px center;}
+}
+
+
+
+
+
+
+
+
+
