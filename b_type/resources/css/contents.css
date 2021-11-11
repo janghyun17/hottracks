@@ -13,9 +13,10 @@
 .mc02 {position:relative;background:#ded2bf;height:200px}
 
 /*** 핫트딜 ***/
-.mc03 {position:relative;background:#fff;height:200px}
+.mc03 {position:relative;padding:40px 0 100px 0;background:#fff;}
 
-
+.mc03 .list {position: relative;margin:0 -30px;}
+.mc03 .list li {float:left;margin:0 30px;}
 
 
 /*** 지금 이 상품을 ***/
