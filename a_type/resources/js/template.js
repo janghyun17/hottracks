@@ -258,6 +258,121 @@ $(function () {
 
 
 
+/* Visual Area */
+$(function(){
+    if(!$('.music01').length) return;
+
+    var $visualAreaMusic = $('.music01');
+	
+    $.fn.visual_area = function(){
+        $.each(this, function(i,v){
+            var $highlight = function() { 
+                var items = $(v).find('.music_visual').triggerHandler('currentVisible');
+                $(v).find('.music_visual').children().removeClass('act');
+                items.addClass('act');
+                if(!$(v).find('.md_play').hasClass("on")){
+                    sequenceControl("PLAY", false);
+                }else{
+                    sequenceControl("STOP", false);
+                }
+                $(v).find('.music_visual').parent().height($(v).find('.music_visual').children().first().height());
+				
+				
+				var n = $(v).find('.li').length
+				function lan(n) {
+				  return (n < 10 ? '0' : '') + n
+				}
+				$(v).find('.md_pagn_len').text(lan(n));
+				
+            };
+
+            var $pagin = $(v).find('.md_pagn');
+            var $timer = $(v).find('.md_timer p');
+            var $paly = $(v).find('.md_btn_play');
+            var $stop = $(v).find('.md_btn_stop');
+            var $prev = $(v).find('.md_pagn_prev');
+            var $next = $(v).find('.md_pagn_next');
+			
+            $(v).find('.music_visual').carouFredSel({
+                responsive:true,
+                firstLoadChk :true,
+                direction:'left',
+                circular:true,
+                infinite:false,
+                auto:{
+                    progress:$timer,
+                    timeoutDuration:3000,
+                },
+                prev: {
+                    button:$prev,
+                    key: 'left'
+                },
+                next: {
+                    button:$next,
+                    key: 'right'
+                },
+                pagination:{
+                    container: $pagin,
+                    anchorBuilder: function(nr) { return '<a href="#">'+ (nr < 10 ? "0"+nr : nr) +'</a>';}
+                },
+                items:{start:0, visible:1},
+                swipe:{onMouse:true, onTouch:true},
+                scroll:{
+                    fx:'crossfade',
+                    duration:500,
+                    items:1,
+                    direction:'right', 
+                    easing :'swing',
+                    onBefore: function() {
+                    },
+                    onAfter:$highlight
+                },
+                onCreate:$highlight
+            });
+
+            $stop.click(function(){
+                sequenceControl("STOP", true);
+                return false;
+            });
+
+            $paly.click(function(){
+                sequenceControl("PLAY", true);
+                return false;
+            });
+            
+            function sequenceControl(option, changeFocus){
+                switch (option) {
+                    case "PLAY":
+                        if(!$(v).find('.md_play').hasClass("on")) return;
+                        
+                        $(v).find('.md_play').removeClass('on');
+                        $(v).find('.music_visual').trigger('play', true);
+                        $(v).find('.music_visual video').trigger('play');
+
+                        changeFocus && $stop.focus();
+                        break;
+                    case "STOP":
+                        if($(v).find('.md_play').hasClass("on")) return;
+
+                        $(v).find('.md_play').addClass('on');
+                        $(v).find('.music_visual').trigger('pause', true);
+                        $(v).find('.music_visual video').trigger('pause');
+
+                        changeFocus && $paly.focus();
+                        break;
+                    // default:
+                    //     break;
+                }
+            }
+        });
+    };
+    $visualAreaMusic.visual_area();
+});
+
+
+
+
+
 
 
 
@@ -290,26 +405,6 @@ $.fn.feScrollGet = function(){
         }
     });
 	
-	
-	$videos = $('.video');
-    $videos.each(function(i){
-        var $video = $(this).find('video'),
-            video = $video,
-            item_top = $video.offset().top,
-            item_h = $video.height();
-		if(($video.offset().top) < (offset) && (item_top + item_h) > (offset_half)){
-            if(!$video.hasClass('video_on')){
-                video.get(0).play();
-                $video.addClass('video_on');
-            }
-        }else{
-            if($video.hasClass('video_on')){
-                video.get(0).pause();
-				video.get(0).currentTime = 0;
-                $video.removeClass('video_on');
-            }
-        }	
-    });
 };
 
 // Scroll Event Function 
