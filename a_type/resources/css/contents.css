@@ -441,11 +441,36 @@
 
 /*** music06 ***/
 .music06 {position:relative;height:851px;background:#faf9f4;}
+.music06 .tit {padding-top:90px;}
 
+/* music06_cont */
+.music06_cont {position:relative;height:574px;margin:20px -360px 0 -620px;overflow:hidden;}
 
+.music06_cont .owl-carousel .owl-nav button.owl-next,
+.music06_cont .owl-carousel .owl-nav button.owl-prev {position:absolute;top:215px;}
+.music06_cont .owl-carousel .owl-nav button.owl-next {left:calc(50% + 325px);}
+.music06_cont .owl-carousel .owl-nav button.owl-prev {right:calc(50% + 175px);}
 
+.music06_cont .item {display:block;position:relative;width:288px;height:574px;box-sizing:border-box;opacity:0.15;transition:opacity 0.6s;}
+.music06_cont .item a {display:block;position:relative;width:288px;height:574px;}
+.music06_cont .item .img {position:absolute;left:50%;top:155px;width:288px;height:288px;transform:translate(-50%,0);}
+.music06_cont .item .img img {width:100%;}
+.music06_cont .item .img:after {position:absolute;left:0;bottom:0;width:100%;height:100%;background:url("../images/music06_txt_bg.png") center bottom /contain no-repeat;content:"";opacity:0;}
+.music06_cont .item .txt {position:absolute;left:0;bottom:90px;width:100%;opacity:0;}
+.music06_cont .item .txt img {display:inline-block;width:auto;text-align:center;}
+.music06_cont .item .ico {position:absolute;left:50px;top:60px;opacity:0;z-index:2;}
+.music06_cont .item .ico li {float:left;margin-right:4px;}
+.music06_cont .item .view {opacity:0;transform:scale(1);transform-origin:center;}
+.music06_cont .item .view img {position:absolute;left:80px;top:0;width:574px;height:574px;animation:rotate both infinite linear 10s;}
 
-
+.music06_cont .center .item,
+.music06_cont .center .item a {width:554px;}
+.music06_cont .center .item {opacity:1;transition-delay:0.4s;}
+.music06_cont .center .item .img {top:50px;width:474px;height:474px;transition:all 0.4s 0.8s;}
+.music06_cont .center .item .img:after {opacity:1;transition:all 0.4s 0.8s;}
+.music06_cont .center .item .txt {opacity:1;transition:all 0.4s 1.2s}
+.music06_cont .center .item .ico {opacity:1;transition:all 0.4s 1.2s}
+.music06_cont .center .item .view {opacity:1;transform:scale(1);transition:all 0.7s 1s}
 
 
 

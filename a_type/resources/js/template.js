@@ -170,8 +170,6 @@ $(function(){
 
 
 
-
-
 $(function () {
  	$('.md_pick_cont .owl-carousel').owlCarousel({
 		loop:true,
@@ -237,16 +235,51 @@ $(function () {
 		autoplayTimeout:3000,
 		//autoplayHoverPause:true
 	});
+
+
+	$('.mc_gift_cont').mCustomScrollbar({
+		axis:"x",
+		scrollInertia:200,
+		advanced:{autoExpandHorizontalScroll:true}
+	});
+			
+ 	$('.music06_cont .owl-carousel').owlCarousel({
+		loop:true,
+		items:5,
+		margin:60,
+		
+		nav:false,
+		navText:false,
+		dots:false,
+		center: true,
+		autoWidth:true,
+		
+		smartSpeed:650,
+		autoplay:true,
+		autoplayTimeout:3000,
+		//autoplayHoverPause:true
+	});
 	
 	
-				
-		$('.mc_gift_cont').mCustomScrollbar({
-			axis:"x",
-			scrollInertia:200,
-			advanced:{autoExpandHorizontalScroll:true}
-		});
-				
-	
+	$('.btn_gnb01').click(function() {
+		$('.gnb').hide();
+		$('.gnb01').fadeIn();
+		return false;
+	});
+	$('.btn_gnb02').click(function() {
+		$('.gnb').hide();
+		$('.gnb02').fadeIn();
+		return false;
+	});
+	$('.btn_gnb03').click(function() {
+		$('.gnb').hide();
+		$('.gnb03').fadeIn();
+		return false;
+	});
+	$('.gnb').click(function() {
+		$('.gnb').fadeOut();
+		return false;
+	});
 });
 
 
@@ -258,7 +291,7 @@ $(function () {
 
 
 
-/* Visual Area */
+/* music01 */
 $(function(){
     if(!$('.music01').length) return;
 
