@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+/***** Common *****/
+* {margin:0;padding:0;}
+img {border:none;vertical-align:top;}
+li {list-style:none;}
+
+
+
+/***** layout *****/
+body {background:#ccc;color:#000;font-family:'Noto Sans','Malgun Gothic','맑은 고딕',Dotum,Arial;font-size:14px;font-weight:400;line-height:20px;-webkit-text-size-adjust:none;}
+#wrap {position:relative;max-width:430px;margin:0 auto;height:100%;background:#fff;text-align:center;}
+#wrap img {width:100%;}
+
+header {position:fixed;left:0;top:0;width:100%;}
+header p {position:relative;max-width:430px;margin:0 auto;}
+
+#container {padding-top:55vw;}
+
+@media only screen and (min-width:450px) {
+#container {padding-top:233px;}
+}
+
+
+
