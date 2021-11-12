@@ -139,7 +139,11 @@ header .link {display:block;position:absolute;left:0;top:0;width:100%;height:100
 
 
 
-
+/*** Cursor ***/
+* {cursor:none !important;}
+.cursor {position:absolute;left:0;top:0;z-index:100000;}
+.dot {position:absolute;left:50%;top:50%;width:141px;height:146px;background:url("../images/pointer.png") no-repeat;box-sizing:border-box;pointer-events:none;transform:translate(-50%,-50%) scale(0.4);transition:transform 0.4s;}
+.cursor.act .dot {transform:translate(-50%,-50%) scale(1);}
 
 
 

@@ -102,6 +102,23 @@ $(function(){
         });
     };
     $visualArea.visual_area();
+	
+	
+    $(document).mousemove(function(e){
+        o = $('#wrap').offset();
+        $('.dot').css({
+            'top': e.pageY - o.top,
+            'left': e.pageX - o.left
+        });
+    });
+	
+    $('a').mouseover(function(){
+        $('.cursor').addClass('act');
+	});
+    $('a').mouseleave(function(){
+        $('.cursor').removeClass('act');
+	});
+	
 });
 
 
