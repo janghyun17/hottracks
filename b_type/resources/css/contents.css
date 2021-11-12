@@ -42,7 +42,7 @@
 .mc_visual .li.act .img li {opacity:1;transition-delay:0.2s;}
 .mc_visual .li.act .img .c2,
 .mc_visual .li.act .img .c3,
-.mc_visual .li.act .img .c4  {animation:mc1_intro both 1.1s;}
+.mc_visual .li.act .img .c4  {animation:mc1_intro both 1.3s;}
 .mc_visual .li.act .img .c2  {animation-delay:0.7s;}
 .mc_visual .li.act .img .c3 {animation-delay:0.9s;}
 .mc_visual .li.act .img .c4  {animation-delay:1.1s;}
@@ -116,6 +116,35 @@
 
 /*** MD Picks ***/
 .mc02 {position:relative;height:900px;background:#ded2bf;}
+.mc02_cont {position:relative;width:1600px;margin-left:-200px;}
+.mc02_cont .tit {position:absolute;left:50%;top:120px;transform:translateX(-50%);}
+.mc02_cont .tit span {position: absolute;animation:md02_cont both infinite 4s;}
+.mc02_cont .tit .c1 {left:115px;top:17px;}
+.mc02_cont .tit .c2 {left:68px;top:63px;animation-delay:0.5s;}
+.mc02_cont .tit .c3 {left:561px;top:47px;animation-delay:0.7s;}
+.mc02_cont li {position:absolute;}
+.mc02_cont li span {position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;transition:opacity 0.5s;}
+.mc02_cont li a:hover span {opacity:1;}
+.mc02_cont .list {transition-delay:0.8s}
+.mc02_cont .s1 {left:65px;top:120px;animation:flip infinite ease-in-out 5s;}
+.mc02_cont .s2 {right:25px;top:120px;animation:flip infinite ease-in-out 4s 0.4s;}
+.mc02_cont .s3 {left:175px;top:468px;animation:flip infinite ease-in-out 4.5s 0.3s;}
+.mc02_cont .s4 {right:145px;top:468px;animation:flip infinite ease-in-out 5.5s 0.2s;}
+
+@keyframes md02_cont {
+0% {transform:scale(0.4);opacity:0;}	
+20% {transform:scale(1.1);opacity:1;}
+40% {transform:scale(0.6);}	
+58% {transform:scale(1);}
+100% {transform:scale(1);}
+}
+
+@keyframes flip {
+0% {transform:perspective(400px) rotateX(0) rotateY(-5deg);}
+50% {transform:perspective(400px) rotateX(0) rotateY(5deg);}
+100% {transform:perspective(400px) rotateX(0) rotateY(-5deg);} 
+}
+
 
 /*** 핫트딜 ***/
 .mc03 {position:relative;padding:40px 0 100px 0;background:#fff;}
