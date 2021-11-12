@@ -137,6 +137,7 @@
 .mc04 .tit_inner {display:inline-block;position:relative;}
 .mc04 .tit .ico {position:absolute;left:-145px;top:-36px;width:65px;}
 .mc04 .tit .ico2 {position:absolute;right:-150px;top:-55px;animation:mc04_s2 both linear infinite 2.7s;}
+.mc04 .tit .ico3 {position:absolute;left:5px;top:-25px;}
 
 @keyframes mc04_s2 {
 0% {transform:scale(1) rotate(20deg)}
@@ -263,7 +264,21 @@
 
 /*** 선물하기 ***/
 .mc09 {position:relative;background:#000;height:1046px}
+.mc09_cont {position:relative;width:1736px;margin-left:-268px;box-sizing:border-box;}
+.mc09_cont .tit {position:absolute;left:-5px;top:310px;width:100%}
+.mc09_list {position:relative;width:100%;height:550px;text-align:center;overflow:hidden;cursor:default;}
+.mc09_list li {display:block;font-size:64px;font-weight:300;line-height:100px;opacity:0.8;letter-spacing:-3px;transition:all 0.4s;}
+.mc09_list li.act {font-size:90px;font-weight:900;line-height:120px;opacity:1;letter-spacing:-7px;;}
+.mc09_area {position:absolute;left:500px;top:125px;width:600px;}
 
+.mc09_cont .list {position:absolute;left:0;top:676px;width:100%;height:370px;}
+.mc09_cont .list li {float:left;margin-left:21px;opacity:0;transform:translateY(30px);}
+.mc09_cont .list li:first-child {margin-left:0;}
+.mc09_cont .list.on li {opacity:1;transform:translateY(0);transition:all 0.6s}
+.mc09_cont .list.on li:nth-child(2) {transition-delay:0.2s;}
+.mc09_cont .list.on li:nth-child(3) {transition-delay:0.4s;}
+.mc09_cont .list.on li:nth-child(4) {transition-delay:0.6s;}
+.mc09_cont .list.on li:nth-child(5) {transition-delay:0.8s;}
 
 
 

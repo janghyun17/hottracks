@@ -14,7 +14,7 @@ li {list-style:none;}
 
 /***** layout *****/
 body {min-width:1300px;background:#fff;color:#000;font-family:'Noto Sans','Malgun Gothic','맑은 고딕',Dotum,Arial;font-size:14px;font-weight:300;line-height:20px;-webkit-text-size-adjust:none;}
-#wrap {position:relative;}
+#wrap {position:relative;overflow:hidden;}
 .inner {position:relative;width:1300px;margin:0 auto;padding:0 50px;box-sizing:border-box;}
 
 

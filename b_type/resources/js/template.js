@@ -125,7 +125,47 @@ $(function(){
 
 
 
+$(function(){
+    if(!$('.mc09_cont').length) return;
+	$.fn.mcMusic = function(){
+		$.each(this, function(i,v){
+			var $highlight = function() { 
+				var items = $(v).triggerHandler('currentVisible');
+				$(v).children().removeClass('act');;
+				items.filter(':eq(2)').addClass('act');
+				$('.mc09_cont .list').addClass('on');
+			};
 
+			$(v).carouFredSel({
+				responsive:false,
+				firstLoadChk :true,    
+				direction:'up',     
+				circular:true,
+				infinite:false,
+				items:{visible:5, start:0},
+				swipe:{onMouse:true, onTouch:true},
+				auto:3000, 
+				prev:false,
+				next:false,
+				pagination:false, 
+				scroll:{
+					fx:'scroll',
+					items:1,
+					//pauseOnHover:true,
+					duration:500,
+					onBefore: function() {
+						$('.mc09_cont .list').removeClass('on')
+					},
+					onAfter:$highlight,
+				},
+				onCreate:$highlight
+			});
+
+
+		});
+	};
+	$('.mc09_list').mcMusic();
+});
 
 
 
