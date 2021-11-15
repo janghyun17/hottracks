@@ -161,7 +161,7 @@
 
 
 /*** 지금 이 상품을 ***/
-.mc04 {position:relative;padding:160px 0 170px 0;background:#1977f2 url("../images/mc04_bg.png") center top repeat;}
+.mc04 {position:relative;padding:160px 0 170px 0;background:#1977f2 url("../images/mc04_bg.png") 17px 30px repeat;}
 .mc04 .tit {position:relative;margin-bottom:145px;}
 .mc04 .tit_inner {display:inline-block;position:relative;}
 .mc04 .tit .ico {position:absolute;left:-145px;top:-36px;width:65px;}
@@ -381,6 +381,63 @@
 
 
 
+
+.music01 {position:relative;background:#1570ff url("../images/music01_bg.png") center repeat;border-bottom:4px solid #000;}
+.music01 .m_inner {height:784px;background:url("../images/music01.png") center no-repeat;}
+
+.music02 {position:relative;background:#fff;}
+.music02 .m_inner {height:234px;background:url("../images/music02.jpg") center no-repeat;}
+
+.music03 {position:relative;background:#fff;}
+.music03 .m_inner {height:1016px;background:url("../images/music03.jpg") center no-repeat;}
+
+.music04 {position:relative;background:#ffe61a url("../images/music04_bg.png") center repeat;}
+.music04 .m_inner {height:526px;background:url("../images/music04.png") center no-repeat;}
+
+.music05 {position:relative;background:#fff;}
+.music05 .m_inner {height:1132px;background:url("../images/music05.jpg") center no-repeat;}
+
+
+.music06 {position:relative;background:#fff;}
+.music06 .m_inner {height:1684px;background:url("../images/music06.jpg") center no-repeat;}
+
+.music07 {position:relative;background:#d4ff1a;}
+.music07 .m_inner {height:238px;background:url("../images/music07.jpg") center no-repeat;}
+
+.music08 {position:relative;background:#fff;}
+.music08 .m_inner {height:1081px;background:url("../images/music08.jpg") center no-repeat;}
+
+.music09 {position:relative;background:#f0f0f0;}
+.music09 .m_inner {height:1100px;background:url("../images/music09.jpg") center no-repeat;}
+
+.music10 {position:relative;background:#fff;}
+.music10 .m_inner {height:1186px;background:url("../images/music10.jpg") center no-repeat;}
+
+.music11 {position:relative;background:#050505;}
+.music11 .m_inner {height:1186px;background:url("../images/music11.jpg") center no-repeat;}
+
+.music12 {position:relative;background:#d4ff1a;}
+.music12 .m_inner {height:250px;background:url("../images/music12.jpg") center no-repeat;}
+
+.music13 {position:relative;background:#fff;}
+.music13 .m13_1 {height:348px;background:url("../images/music13_01.jpg") center no-repeat;}
+.music13 .m13_2 {height:480px;background:url("../images/music13_02.jpg") center no-repeat;}
+.music13 .m13_3 {height:466px;background:url("../images/music13_03.jpg") center no-repeat;}
+.music13 .m13_4 {height:514px;background:url("../images/music13_04.jpg") center no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub_area {position: relative;max-width:1300px;margin:0 auto;}
 
 
 
