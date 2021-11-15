@@ -102,7 +102,9 @@ $(function(){
         });
     };
     $visualArea.visual_area();
+});
 	
+$(function(){
 	
     $(document).mousemove(function(e){
         o = $('#wrap').offset();
