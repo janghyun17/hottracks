@@ -170,38 +170,37 @@ $(function(){
 
 
 $(function () {
+	/* MD Pick */
  	$('.md_pick_cont .owl-carousel').owlCarousel({
 		loop:true,
 		items:3,
 		margin:38,
-		
 		nav:true,
 		navText:false,
 		dots:false,
-		
 		smartSpeed:650,
 		autoplay:true,
 		autoplayTimeout:3000,
 		//autoplayHoverPause:true
 	});
 	
+	/* 하트딜 */
  	$('.hot_deal_cont .owl-carousel').owlCarousel({
 		loop:true,
 		items:5,
 		margin:0,
-		
 		nav:true,
 		navText:false,
 		dots:false,
 		center: true,
 		autoWidth:true,
-		
 		smartSpeed:650,
 		autoplay:true,
 		autoplayTimeout:3000,
 		//autoplayHoverPause:true
 	});
 	
+	/* Life */
  	$('.mc_life_cont .owl-carousel').owlCarousel({
 		loop:true,
 		items:1,
@@ -211,18 +210,24 @@ $(function () {
 		dots:false,
 		center: true,
 		autoWidth:false,
-		
 		smartSpeed:850,
 		autoplay:true,
 		autoplayTimeout:3000,
 		autoplayHoverPause:true
 	});
+
+	/* 특별한 날, 핫트 선물 */
+	$('.mc_gift_cont').mCustomScrollbar({
+		axis:"x",
+		scrollInertia:200,
+		advanced:{autoExpandHorizontalScroll:true}
+	});
 	
+	/* 신규 기획전 */
  	$('.hot_promotion02_cont .owl-carousel').owlCarousel({
 		loop:true,
 		items:3,
 		margin:140,
-		
 		nav:true,
 		navText:false,
 		dots:false,
@@ -234,32 +239,10 @@ $(function () {
 		autoplayTimeout:3000,
 		//autoplayHoverPause:true
 	});
+});
 
-
-	$('.mc_gift_cont').mCustomScrollbar({
-		axis:"x",
-		scrollInertia:200,
-		advanced:{autoExpandHorizontalScroll:true}
-	});
-			
- 	$('.music06_cont .owl-carousel').owlCarousel({
-		loop:true,
-		items:5,
-		margin:60,
-		
-		nav:false,
-		navText:false,
-		dots:false,
-		center: true,
-		autoWidth:true,
-		
-		smartSpeed:650,
-		autoplay:true,
-		autoplayTimeout:3000,
-		//autoplayHoverPause:true
-	});
-	
-	
+$(function () {
+	/* Menu */
 	$('.btn_gnb01').click(function() {
 		$('.gnb').hide();
 		$('.gnb01').fadeIn();
@@ -287,11 +270,6 @@ $(function () {
 		return false;
 	});
 });
-
-
-
-
-
 
 
 
@@ -406,6 +384,25 @@ $(function(){
         });
     };
     $visualAreaMusic.visual_area();
+});
+
+
+/* Music : 음반 */
+$(function () {
+ 	$('.music06_cont .owl-carousel').owlCarousel({
+		loop:true,
+		items:5,
+		margin:60,
+		nav:false,
+		navText:false,
+		dots:false,
+		center: true,
+		autoWidth:true,
+		smartSpeed:650,
+		autoplay:true,
+		autoplayTimeout:3000,
+		//autoplayHoverPause:true
+	});
 });
 
 
