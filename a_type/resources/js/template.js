@@ -5,7 +5,7 @@ $(function(){
     if(!$('.visual_area').length) return;
 
     var $visualArea = $('.visual_area');
-    $visualArea.find('.img p').imgLiquid({fill:true, horizontalAlign:"center", verticalAlign:"center"});
+    $visualArea.find('.img p').imgLiquid({fill:false, horizontalAlign:"center", verticalAlign:"center"});
 	
     $.fn.visual_area = function(){
         $.each(this, function(i,v){

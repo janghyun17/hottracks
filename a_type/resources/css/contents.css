@@ -10,7 +10,7 @@
 /* mc_visual */
 .mc_visual {position:relative;}
 .mc_visual .li {position:relative;display:block;float:left;width:100%;height:985px;box-sizing:border-box;overflow:hidden;cursor:default;}
-.mc_visual .li .img {position:relative;height:600px;overflow:hidden;}
+.mc_visual .li .img {position:relative;height:600px;background:#e83203;overflow:hidden;}
 .mc_visual .li .img p {position:absolute;left:0;top:0;width:100%;height:100%;}
 .mc_visual .li .list {position: relative;width:1200px;margin:0 auto;}
 .mc_visual .li .list ul {margin-top:38px;}
@@ -493,7 +493,7 @@
 .music04 {position:relative;height:335px;background:url("../images/music04.jpg") center top no-repeat;}
 .music05 {position:relative;height:487px;background:url("../images/music05.jpg") center top no-repeat;}
 .music08 {position:relative;height:697px;background:url("../images/music08.jpg") center top no-repeat;}
-.music08 {position:relative;height:598px;background:url("../images/music09.jpg") center top no-repeat;}
+.music09 {position:relative;height:598px;background:url("../images/music09.jpg") center top no-repeat;}
 .music10 {position:relative;height:564px;background:#fff0ed;}
 .music10:before {position:absolute;left:0;top:0;width:50%;height:100%;background:#fefdfb;content:"";}
 .music10 p {position:relative;width:100%;height:564px;background:url("../images/music10.jpg") center top no-repeat;z-index:1;}
