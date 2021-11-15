@@ -3,13 +3,10 @@
     Contents.css
 */
 
-/**** Main  ****/
-
-
+/**** Main ****/
 /*** Visual Area ***/
 .mc01 {position:relative;padding-top:65px;background:#000;}
 .visual_area {position:relative;width:1790px;height:780px;margin-left:-295px;}
-
 
 /* mc_visual */
 .mc_visual {position:relative;height:780px;}
@@ -17,7 +14,6 @@
 .mc_visual .li.s1 {background:#d40000 url("../images/mc01_bg01.jpg") center no-repeat;}
 .mc_visual .li.s2 {background:#ffc762;}
 .mc_visual .li.s3 {background:#148455 url("../images/mc01_bg02.jpg") center no-repeat;}
-
 .mc_visual .li .img li {position:absolute;opacity:0;transition:all 0.6s;}
 .mc_visual .li .img li img {display:block;position:relative;}
 .mc_visual .li.s1 .img .c1 {right:130px;top:0;z-index:1;}
@@ -26,7 +22,6 @@
 .mc_visual .li .img .c2 {right:175px;top:120px;}
 .mc_visual .li .img .c3 {right:960px;top:470px;}
 .mc_visual .li .img .c4 {right:70px;top:485px;}
-
 .mc_visual .li .txt {position:absolute;left:175px;top:180px;}
 .mc_visual .li .txt li {position:relative;overflow:hidden;}
 .mc_visual .li .txt li img {display:block;position:relative;opacity:0;}
@@ -38,7 +33,6 @@
 .mc_visual .li.act .txt .t2 img {animation:fadeTop2 both 0.5s 0.5s;}
 .mc_visual .li.act .txt .t3 img {animation:fade both 0.5s 0.8s;}
 .mc_visual .li.act .txt .t4 img {animation:fade both 0.5s 1.1s;}
-
 .mc_visual .li.act .img li {opacity:1;transition-delay:0.2s;}
 .mc_visual .li.act .img .c2,
 .mc_visual .li.act .img .c3,
@@ -49,6 +43,32 @@
 .mc_visual .li.act .img .c2 img {animation:mc1_word1 both linear infinite 10s;}
 .mc_visual .li.act .img .c3 img {animation:mc1_word2 both linear infinite 9s;}
 .mc_visual .li.act .img .c4 img {animation:mc1_word3 both linear infinite 8s;}
+
+/* Control */
+.visual_area .mc_visual_control {position:absolute;left:50%;bottom:50px;width:280px;margin-left:-720px;z-index:5;}
+.visual_area .mc_visual_control_inner {position:relative;float:left;width:200px;height:50px;background:rgba(0,0,0,0.14);border-radius:25px;text-align:center;}
+.visual_area .mc_visual_control .more {display:block;float:right;width:50px;height:50px;background:rgba(0,0,0,0.14) url("../images/btn_more.png") center no-repeat;border-radius:25px;text-indent:-9999px;overflow:hidden;}
+
+/* md_pagn */
+.visual_area .md_pagn {position:absolute;left:20px;top:15px;}
+.visual_area .md_pagn a {display:none;position:relative;color:#fff;font-size:17px;font-weight:bold;line-height:18px;letter-spacing:0;text-align:center;text-decoration:none;outline:none;transition:all 0.4s;}
+.visual_area .md_pagn a.selected {display:block;}
+.visual_area .md_pagn_len {position:absolute;left:160px;top:15px;color:#fff;font-size:17px;font-weight:bold;line-height:18px;letter-spacing:0;text-align:center;text-decoration:none;}
+
+/* md_timer */
+.visual_area .md_timer {position:absolute;left:50px;top:24px;width:65px;height:2px;background:rgba(255,255,255,0.4);overflow:hidden;}
+.visual_area .md_timer p {position:absolute;left:0;top:0;width:0;height:2px;background:#fff;}
+
+/* md_play  */
+.visual_area .md_play {position:absolute;right:50px;top:15px;}
+.visual_area .md_play a {display:block;position:relative;width:20px;height:20px;overflow:hidden;outline:none;}
+.visual_area .md_play .md_btn_play:before {position:absolute;left:50%;top:50%;width:0;height:0;border-width:5px 0 5px 8px;border-style:solid;border-color:transparent;border-left-color:#fff;content:"";transform:translate(-50%,-50%);transition:all 0.4s;}
+.visual_area .md_play .md_btn_stop:before {position:absolute;left:6px;top:5px;width:2px;height:10px;background:#fff;content:"";transition:all 0.4s;}
+.visual_area .md_play .md_btn_stop:after {position:absolute;left:11px;top:5px;width:2px;height:10px;background:#fff;content:"";transition:all 0.4s;}
+.visual_area .md_play .md_btn_play {display:none;}
+.visual_area .md_play .md_btn_stop {display:block;}
+.visual_area .md_play.on .md_btn_play {display:block;}
+.visual_area .md_play.on .md_btn_stop {display:none;}
 
 @keyframes mc1_intro {
 0% {transform:scale(0) translate(80%,80%);opacity:0;}
@@ -79,39 +99,6 @@
 
 
 
-/* Control */
-
-.visual_area .mc_visual_control {position:absolute;left:50%;bottom:50px;width:280px;margin-left:-720px;z-index:5;}
-.visual_area .mc_visual_control_inner {position:relative;float:left;width:200px;height:50px;background:rgba(0,0,0,0.14);border-radius:25px;text-align:center;}
-.visual_area .mc_visual_control .more {display:block;float:right;width:50px;height:50px;background:rgba(0,0,0,0.14) url("../images/btn_more.png") center no-repeat;border-radius:25px;text-indent:-9999px;overflow:hidden;}
-
-/* md_pagn */
-.visual_area .md_pagn {position:absolute;left:20px;top:15px;}
-.visual_area .md_pagn a {display:none;position:relative;color:#fff;font-size:17px;font-weight:bold;line-height:18px;letter-spacing:0;text-align:center;text-decoration:none;outline:none;transition:all 0.4s;}
-.visual_area .md_pagn a.selected {display:block;}
-.visual_area .md_pagn_len {position:absolute;left:160px;top:15px;color:#fff;font-size:17px;font-weight:bold;line-height:18px;letter-spacing:0;text-align:center;text-decoration:none;}
-
-/* md_timer */
-.visual_area .md_timer {position:absolute;left:50px;top:24px;width:65px;height:2px;background:rgba(255,255,255,0.4);overflow:hidden;}
-.visual_area .md_timer p {position:absolute;left:0;top:0;width:0;height:2px;background:#fff;}
-
-/* md_play  */
-.visual_area .md_play {position:absolute;right:50px;top:15px;}
-.visual_area .md_play a {display:block;position:relative;width:20px;height:20px;overflow:hidden;outline:none;}
-.visual_area .md_play .md_btn_play:before {position:absolute;left:50%;top:50%;width:0;height:0;border-width:5px 0 5px 8px;border-style:solid;border-color:transparent;border-left-color:#fff;content:"";transform:translate(-50%,-50%);transition:all 0.4s;}
-.visual_area .md_play .md_btn_stop:before {position:absolute;left:6px;top:5px;width:2px;height:10px;background:#fff;content:"";transition:all 0.4s;}
-.visual_area .md_play .md_btn_stop:after {position:absolute;left:11px;top:5px;width:2px;height:10px;background:#fff;content:"";transition:all 0.4s;}
-.visual_area .md_play .md_btn_play {display:none;}
-.visual_area .md_play .md_btn_stop {display:block;}
-.visual_area .md_play.on .md_btn_play {display:block;}
-.visual_area .md_play.on .md_btn_stop {display:none;}
-
-
-
-
-
-
-
 
 
 /*** MD Picks ***/
@@ -126,7 +113,7 @@
 .mc02_cont li span {position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;transition:opacity 0.5s;}
 .mc02_cont li a:hover span {opacity:1;}
 .mc02_cont .list {transition-delay:0.8s}
-.mc02_cont .s1 {left:65px;top:120px;animation:flip infinite ease-in-out 5s;}
+.mc02_cont .s1 {left:65px;top:120px;animation:flip infinite ease-in-out 4.4s;}
 .mc02_cont .s2 {right:25px;top:120px;animation:flip infinite ease-in-out 4s 0.4s;}
 .mc02_cont .s3 {left:175px;top:468px;animation:flip infinite ease-in-out 4.5s 0.3s;}
 .mc02_cont .s4 {right:145px;top:468px;animation:flip infinite ease-in-out 5.5s 0.2s;}
@@ -146,6 +133,10 @@
 }
 
 
+
+
+
+
 /*** 핫트딜 ***/
 .mc03 {position:relative;padding:40px 0 100px 0;background:#fff;}
 .mc03 .tit {margin-bottom:30px;transform:scale(0.4);opacity:0;transition:all 0.3s;transform-origin:center 70%}
@@ -153,10 +144,11 @@
 .mc03 .list li {float:left;margin:0 30px;}
 .mc03 .list:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
 .mc03 .btn {margin-top:55px;}
-
 .mc03 .tit.active {transform:scale(1);opacity:1;transition:all 0.5s 0.2s;}
 .mc03 .list li:nth-child(2).active {transition-delay:0.4s;}
 .mc03 .list li:nth-child(3).active {transition-delay:0.6s;}
+
+
 
 
 
@@ -166,16 +158,7 @@
 .mc04 .tit_inner {display:inline-block;position:relative;}
 .mc04 .tit .ico {position:absolute;left:-145px;top:-36px;width:65px;}
 .mc04 .tit .ico2 {position:absolute;right:-150px;top:-55px;animation:mc04_s2 both linear infinite 2.7s;}
-.mc04 .tit .ico3 {position:absolute;left:5px;top:-25px;animation:fade both 0.6s 0.6s;}
-
-@keyframes mc04_s2 {
-0% {transform:scale(1) rotate(20deg)}
-50% {transform:scale(0.9) rotate(-10deg)}
-100% {transform:scale(1) rotate(20deg)}
-}
-
-
-
+.mc04 .tit .ico3 {position:absolute;left:5px;top:-25px;transition-delay:0.8s;}
 .mc04 .list {position:relative;height:2280px;}
 .mc04 .list li {position:absolute;opacity:0;transform:translateY(40px);transition:all 0.6s 0.4s;}
 .mc04 .list li.active {opacity:1;transform:translateY(0);}
@@ -193,6 +176,12 @@
 .mc04 li:nth-child(7) {left:608px;top:1272px;}
 .mc04 li:nth-child(8) {left:-30px;top:1798px;}
 .mc04 li:nth-child(9) {left:608px;top:1798px;}
+
+@keyframes mc04_s2 {
+0% {transform:scale(1) rotate(20deg)}
+50% {transform:scale(0.9) rotate(-10deg)}
+100% {transform:scale(1) rotate(20deg)}
+}
 
 
 
@@ -290,7 +279,6 @@
 
 
 
-
 /*** 선물하기 ***/
 .mc09 {position:relative;background:#000;height:1046px}
 .mc09_cont {position:relative;width:1736px;margin-left:-268px;box-sizing:border-box;}
@@ -308,6 +296,7 @@
 .mc09_cont .list.on li:nth-child(3) {transition-delay:0.4s;}
 .mc09_cont .list.on li:nth-child(4) {transition-delay:0.6s;}
 .mc09_cont .list.on li:nth-child(5) {transition-delay:0.8s;}
+
 
 
 
@@ -340,12 +329,10 @@
 .mc10 .list:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
 .mc10 .btn {margin-top:80px;}
 
-
 @keyframes txtMask {
 0% {width:0%;opacity:0;}
 100% {width:105%;opacity:1;}
 }
-
 
 
 
@@ -382,6 +369,12 @@
 
 
 
+
+
+
+
+
+/**** Music ****/
 .music01 {position:relative;background:#1570ff url("../images/music01_bg.png") center repeat;border-bottom:4px solid #000;}
 .music01 .m_inner {height:784px;background:url("../images/music01.png") center no-repeat;}
 
@@ -397,16 +390,12 @@
 .music05 {position:relative;background:#fff;}
 .music05 .m_inner {height:1132px;background:url("../images/music05.jpg") center no-repeat;}
 
-
 .music06 {position:relative;background:#fff;}
 .music06 .m_inner {height:1684px;background:url("../images/music06.jpg") center no-repeat;}
 .music06 .img {position:absolute;left:50%;top:314px;width:2414px;height:1240px;transform:translateX(-50%);}
-
 .music06 .txt01 {position:absolute;left:0;top:210px;width:100%;height:153px;background: url("../images/music06_txt01.png") center repeat-x;animation:music06_01 both infinite linear 20s;}
 .music06 .txt02 {position:absolute;left:0;top:567px;width:100%;height:153px;background: url("../images/music06_txt01.png") center repeat-x;animation:music06_01 both infinite linear 15s;}
 .music06 .txt03 {position:absolute;left:0;top:389px;width:100%;height:150px;background: url("../images/music06_txt02.png") center repeat-x;animation:music06_02 both infinite linear 18s;}
-
-
 
 @keyframes music06_01 {
 0% {background-position:0 center;}
@@ -416,7 +405,6 @@
 0% {background-position:0 center;}
 100% {background-position:1150px center;}
 }
-
 
 .music07 {position:relative;background:#d4ff1a;}
 .music07 .m_inner {height:238px;background:url("../images/music07.jpg") center no-repeat;}
@@ -451,10 +439,13 @@
 
 
 
+/*** sub_area ***/
+.sub_area {position:relative;max-width:1300px;margin:0 auto;}
 
 
 
-.sub_area {position: relative;max-width:1300px;margin:0 auto;}
+
+
 
 
 
