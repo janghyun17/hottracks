@@ -16,10 +16,10 @@ body {background:#ccc;color:#000;font-family:'Noto Sans','Malgun Gothic','맑은
 header {position:fixed;left:0;top:0;width:100%;}
 header p {position:relative;max-width:430px;margin:0 auto;}
 
-#container {padding-top:55vw;}
+#container {padding-top:45vw;}
 
 @media only screen and (min-width:450px) {
-#container {padding-top:233px;}
+#container {padding-top:185px;}
 }
 
 
