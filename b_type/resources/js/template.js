@@ -1,6 +1,25 @@
 
+/* cursor */
+$(function(){
+    $(document).mousemove(function(e){
+        o = $('#wrap').offset();
+        $('.dot').css({
+            'top': e.pageY - o.top,
+            'left': e.pageX - o.left
+        });
+    });
+	
+    $('a').mouseover(function(){
+        $('.cursor').addClass('act');
+	});
+    $('a').mouseleave(function(){
+        $('.cursor').removeClass('act');
+	});
+	
+});
 
-/* Visual Area */
+
+/* Main : Visual Area */
 $(function(){
     if(!$('.visual_area').length) return;
 
@@ -19,7 +38,6 @@ $(function(){
                     sequenceControl("STOP", false);
                 }
                 $(v).find('.mc_visual').parent().height($(v).find('.mc_visual').children().first().height());
-				
 				
 				var n = $(v).find('.li').length
 				function lan(n) {
@@ -104,29 +122,7 @@ $(function(){
     $visualArea.visual_area();
 });
 	
-$(function(){
-	
-    $(document).mousemove(function(e){
-        o = $('#wrap').offset();
-        $('.dot').css({
-            'top': e.pageY - o.top,
-            'left': e.pageX - o.left
-        });
-    });
-	
-    $('a').mouseover(function(){
-        $('.cursor').addClass('act');
-	});
-    $('a').mouseleave(function(){
-        $('.cursor').removeClass('act');
-	});
-	
-});
-
-
-
-
-
+/* Main : 선물하기 */
 $(function(){
     if(!$('.mc09_cont').length) return;
 	$.fn.mcMusic = function(){
@@ -171,10 +167,6 @@ $(function(){
 
 
 
-
-
-
-
 /* Scroll Event */
 $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function(){
@@ -205,4 +197,14 @@ $.fn.feScrollGet = function(){
 function feScrollFn(){
     $.fn.feScrollGet();
 }
+
+
+
+
+
+
+
+
+
+
 
