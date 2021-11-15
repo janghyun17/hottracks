@@ -1,6 +1,5 @@
 
-
-/* Visual Area */
+/* Main : Visual Area */
 $(function(){
     if(!$('.visual_area').length) return;
 
@@ -18,9 +17,7 @@ $(function(){
                 }else{
                     sequenceControl("STOP", false);
                 }
-                $(v).find('.mc_visual').parent().height($(v).find('.mc_visual').children().first().height());
-				
-				
+                $(v).find('.mc_visual').parent().height($(v).find('.mc_visual').children().first().height());	
 				var n = $(v).find('.li').length
 				function lan(n) {
 				  return (n < 10 ? '0' : '') + n
@@ -113,6 +110,8 @@ $(function(){
 });
 
 
+
+/* Main : 음반소식 */
 $(function(){
     if(!$('.mc_music_cont').length) return;
 	$.fn.mcMusic = function(){
@@ -298,7 +297,7 @@ $(function () {
 
 
 
-/* music01 */
+/* Music Main */
 $(function(){
     if(!$('.music01').length) return;
 
@@ -411,16 +410,6 @@ $(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Scroll Event */
 $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function(){
@@ -451,4 +440,7 @@ $.fn.feScrollGet = function(){
 function feScrollFn(){
     $.fn.feScrollGet();
 }
+
+
+
 
