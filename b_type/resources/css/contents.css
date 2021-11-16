@@ -159,7 +159,7 @@
 .mc04 .tit_inner {display:inline-block;position:relative;}
 .mc04 .tit .ico {position:absolute;left:-145px;top:-36px;width:65px;}
 .mc04 .tit .ico2 {position:absolute;right:-150px;top:-55px;animation:mc04_s2 both linear infinite 2.7s;}
-.mc04 .tit .ico3 {position:absolute;left:5px;top:-25px;transition-delay:0.8s;}
+.mc04 .tit .ico3 {position:absolute;left:0px;top:-45px;width:560px;height:380px;transition-delay:0.6s;}
 .mc04 .list {position:relative;height:2280px;}
 .mc04 .list li {position:absolute;opacity:0;transform:translateY(40px);transition:all 0.6s 0.4s;}
 .mc04 .list li.active {opacity:1;transform:translateY(0);}
