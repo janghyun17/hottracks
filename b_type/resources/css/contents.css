@@ -18,10 +18,11 @@
 .mc_visual .li .img li img {display:block;position:relative;}
 .mc_visual .li.s1 .img .c1 {right:130px;top:0;z-index:1;}
 .mc_visual .li.s2 .img .c1 {right:0;top:0;}
-.mc_visual .li.s3 .img .c1 {right:284px;top:70px;z-index:1;}
+.mc_visual .li.s3 .img .c1 {right:390px;top:35px;z-index:1;}
 .mc_visual .li .img .c2 {right:175px;top:120px;}
 .mc_visual .li .img .c3 {right:960px;top:470px;}
 .mc_visual .li .img .c4 {right:70px;top:485px;}
+.mc_visual .li.s3 .img .c2 {right:85px;top:130px;}
 .mc_visual .li .txt {position:absolute;left:175px;top:180px;}
 .mc_visual .li .txt li {position:relative;overflow:hidden;}
 .mc_visual .li .txt li img {display:block;position:relative;opacity:0;}
